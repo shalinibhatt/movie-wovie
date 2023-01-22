@@ -48,15 +48,35 @@ const Login = () => {
 
   return (
     <Wrapper>
-        {error&&<div>There was an error</div>}
+        {error&&<div style={{
+          color: "red",
+          fontSize: "1rem",
+        }}>Invalid Username or Password!</div>}
       <label>Username : </label>
       <input
+      style={{
+        width: "20%",
+        height: "25px",
+        borderRadius: "5px",
+        border: "1px solid black",
+        padding: "5px",
+        margin: "5px",
+
+      }}
         type="text"
         value={username}
         name="username"
         onChange={handleInput}
       />
-      <input
+      <input    style={{
+        width: "20%",
+        height: "25px",
+        borderRadius: "5px",
+        border: "1px solid black",
+        padding: "5px",
+        margin: "5px",
+
+      }}
         type="password"
         value={password}
         name="password"

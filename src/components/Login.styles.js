@@ -7,8 +7,9 @@ justify-content: center;
 align-items: center;
 text-align: center;
 padding: 20px;
-color: var(--lightGrey);
-background: var(--darkGrey);
+color: var(--black);
+font-weight: bold;
+font-size: 1.5rem;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 text-decoration: none;
 &:hover {
