@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import { Image } from "./Thumb.styles";
 
 const Thumb = ({ image, movieId, clickable }) => (
+  
   <div>
     {clickable ? (
       <Link to={`/${movieId}`}>

@@ -9,8 +9,10 @@ import NoImage from  '../../images/no_image.jpg';
 //Styles
 import { Wrapper, Content, Text } from "./MovieInfo.styles";
 
-const MovieInfo =({ movie }) => (
-    < Wrapper backdrop = {movie.backdrop_path}>
+const MovieInfo =({ movie }) => {
+
+    return (
+< Wrapper backdrop = {movie.backdrop_path}>
         <Content>
             <Thumb
             image = {
@@ -39,7 +41,9 @@ const MovieInfo =({ movie }) => (
             </Text>
         </Content>
     </Wrapper>
-);
+    )
+    
+                        };
 
 MovieInfo.propTypes = {
     movie: PropTypes.object,
