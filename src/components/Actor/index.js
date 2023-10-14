@@ -11,7 +11,7 @@ const Actor = ({ name, character, imageUrl }) => {
   return (
     <a
       href={`https://en.wikipedia.org/wiki/${firstName}_${lastName}`}
-      target="_self"
+      target="_blank"
       rel="noreferrer"
       style={
         {
